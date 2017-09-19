@@ -1,0 +1,26 @@
+Office and other applications performing digital signature
+on Windows look for user certificates on the "My" system 
+store of certificates. So, in order to make your CSP usable
+for digital signature, you will first need to load the 
+certificates managed by your CSP to the "MY" system store. 
+This can be achieved using the function 
+CertAddEncodedCertificateToStore followed by a call to 
+CertSetCertificateContextProperty that will indicate your 
+CSP name and the container where the key of certificate is stored.
+
+To illustrate this, I have written a small command line program 
+that enables loading all certificates managed by a given CSP to 
+the "MY" certificate store. It is also enabled removing them from 
+the store where they are no more needed.
+You can get its source code from 
+https://www.idrix.fr/Root/Samples/LoadCertToStore.cpp. A binary is 
+also available at https://www.idrix.fr/Root/Samples/LoadCertToStore.zip 
+(binary is signed using IDRIX code signing certificates).
+
+I hope this will help.
+
+Regards,
+--
+Mounir IDRASSI
+
+Mounir IDRASSI - IDRIX - http://www.idrix.fr
