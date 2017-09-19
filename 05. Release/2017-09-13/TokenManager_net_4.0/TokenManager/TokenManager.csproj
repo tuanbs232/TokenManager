@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F8285F2-00F8-45B0-BAC8-C84B13909FC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TokenManager</RootNamespace>
+    <AssemblyName>TokenManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo-VNPT.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\04. Resources\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pkcs11Interop, Version=4.0.0.0, Culture=neutral, PublicKeyToken=c10e9c2d8c006d2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pkcs11Interop.4.0.0\lib\net40\Pkcs11Interop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.2\lib\net4\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="common\AES.cs" />
+    <Compile Include="common\CertificateRenew.cs" />
+    <Compile Include="common\CertUtil.cs" />
+    <Compile Include="common\CommonMessage.cs" />
+    <Compile Include="common\CspUtil.cs" />
+    <Compile Include="common\CspWrapper.cs" />
+    <Compile Include="common\CustomerInfo.cs" />
+    <Compile Include="common\Observer.cs" />
+    <Compile Include="common\ObserverAble.cs" />
+    <Compile Include="common\Pkcs11Connector.cs" />
+    <Compile Include="common\Pkcs11Util.cs" />
+    <Compile Include="common\Pkcs12Importer.cs" />
+    <Compile Include="common\SingleInstanceApp.cs" />
+    <Compile Include="common\SslHelper.cs" />
+    <Compile Include="common\SystemUtil.cs" />
+    <Compile Include="common\TokenManagerConstants.cs" />
+    <Compile Include="common\TokenManagerException.cs" />
+    <Compile Include="common\UsbNotification.cs" />
+    <Compile Include="common\UserPinUnlocker.cs" />
+    <Compile Include="dialog\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\CustomTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dialog\ChangeUserPin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\ChangeUserPin.Designer.cs">
+      <DependentUpon>ChangeUserPin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\ConfirmDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\ConfirmDialog.Designer.cs">
+      <DependentUpon>ConfirmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\ConfirmOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\ConfirmOTP.Designer.cs">
+      <DependentUpon>ConfirmOTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\ConfirmUserPin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\ConfirmUserPin.Designer.cs">
+      <DependentUpon>ConfirmUserPin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\ErrorDialog.Designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\LoadingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\LoadingDialog.Designer.cs">
+      <DependentUpon>LoadingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\MessageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\MessageDialog.Designer.cs">
+      <DependentUpon>MessageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\SelectOtpType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\SelectOtpType.Designer.cs">
+      <DependentUpon>SelectOtpType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\SerialDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\SerialDialog.Designer.cs">
+      <DependentUpon>SerialDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\UpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\UpdateProfile.Designer.cs">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test\BorderLess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\BorderLess.Designer.cs">
+      <DependentUpon>BorderLess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test\ContextMenus.cs" />
+    <Compile Include="test\ImportP12Test.cs" />
+    <Compile Include="test\MyColorTable.cs" />
+    <Compile Include="test\MyRenderer.cs" />
+    <Compile Include="test\PasswordInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\PasswordInput.Designer.cs">
+      <DependentUpon>PasswordInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test\ProcessIcon.cs" />
+    <Compile Include="test\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tmsclient\QueryUnlockTemplate.cs" />
+    <Compile Include="tmsclient\RenewCertMeta.cs" />
+    <Compile Include="tmsclient\RenewCertResponse.cs" />
+    <Compile Include="tmsclient\RenewCertTemplate.cs" />
+    <Compile Include="tmsclient\TMSClient.cs" />
+    <Compile Include="tmsclient\RootObject.cs" />
+    <Compile Include="tmsclient\MetaData.cs" />
+    <Compile Include="tmsclient\UnlockPinTemplate.cs" />
+    <Compile Include="tmsclient\UpdateProfileTemplate.cs" />
+    <EmbeddedResource Include="dialog\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\ChangeUserPin.resx">
+      <DependentUpon>ChangeUserPin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\ConfirmDialog.resx">
+      <DependentUpon>ConfirmDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\ConfirmOTP.resx">
+      <DependentUpon>ConfirmOTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\ConfirmUserPin.resx">
+      <DependentUpon>ConfirmUserPin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\LoadingDialog.resx">
+      <DependentUpon>LoadingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\MessageDialog.resx">
+      <DependentUpon>MessageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\SelectOtpType.resx">
+      <DependentUpon>SelectOtpType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\SerialDialog.resx">
+      <DependentUpon>SerialDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="test\BorderLess.resx">
+      <DependentUpon>BorderLess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\PasswordInput.resx">
+      <DependentUpon>PasswordInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo-VNPT.ico" />
+    <None Include="Resources\Logo-VNPT.ico" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

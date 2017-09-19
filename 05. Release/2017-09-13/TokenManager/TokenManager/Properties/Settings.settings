@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TokenManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CACHED_PKCS11_MODULE_KEY" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ALLOWED_PKCS11_MODULE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vnptca_p11_v6,BkavCA,vnpt-ca_csp11</Value>
+    </Setting>
+    <Setting Name="SIDE_MENU_STATE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">OPEN</Value>
+    </Setting>
+    <Setting Name="HAS_UPDATED_CERT_LIST" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0410131413111210,</Value>
+    </Setting>
+    <Setting Name="SKIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LIGHT</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
