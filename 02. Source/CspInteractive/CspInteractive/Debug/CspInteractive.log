@@ -1,0 +1,8 @@
+﻿  CspInteractive.cpp
+s:\work\projects\token manager\02. sources\cspinteractive\cspinteractive\cspinteractive.cpp(62): warning C4101: 'code': unreferenced local variable
+s:\work\projects\token manager\02. sources\cspinteractive\cspinteractive\cspinteractive.cpp(99): warning C4101: 'code': unreferenced local variable
+s:\work\projects\token manager\02. sources\cspinteractive\cspinteractive\cspinteractive.cpp(141): warning C4101: 'code': unreferenced local variable
+s:\work\projects\token manager\02. sources\cspinteractive\cspinteractive\cspinteractive.cpp(156): warning C4101: 'hProv': unreferenced local variable
+     Creating library S:\WORK\Projects\Token Manager\02. Sources\CspInteractive\Debug\CspInteractive.lib and object S:\WORK\Projects\Token Manager\02. Sources\CspInteractive\Debug\CspInteractive.exp
+  CspInteractive.vcxproj -> S:\WORK\Projects\Token Manager\02. Sources\CspInteractive\Debug\CspInteractive.dll
+  CspInteractive.vcxproj -> S:\WORK\Projects\Token Manager\02. Sources\CspInteractive\Debug\CspInteractive.pdb (Full PDB)

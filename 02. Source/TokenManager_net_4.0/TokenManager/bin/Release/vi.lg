@@ -1,0 +1,152 @@
+MENU_CERTIFICATE=Chứng thư số
+MENU_TOOL=Công cụ
+MENU_CONFIG=Cấu hình
+MENU_SUPPORT=Hỗ trợ
+
+TITLE_CERTIFICATE=CHỨNG THƯ SỐ
+TITLE_TOOL=CÔNG CỤ
+TITLE_CONFIG=CẤU HÌNH
+
+TABLE_COLUMN_CN=Chủ sở hữu
+TABLE_COLUMN_VALID_FROM=Từ ngày
+TABLE_COLUMN_VALID_TO=Đến ngày
+
+TABLE_VIEW_CERT_TOOL_TRIP=Xem chứng thư số
+TABLE_VIEW_SERIAL_TOOL_TRIP=Xem số serial
+TABLE_CHECK_OCSP_TOOL_TRIP=Kiểm tra trạng thái CTS
+
+TOOL_UNLOCK_TITLE=Mở khóa Token
+TOOL_UNLOCK_DES=Khởi tạo lại mã PIN Token khi bị khóa.
+TOOL_UNLOCK_BTN=Mở khóa
+TOOL_CHANGEPIN_TITLE=Thay đổi mã PIN
+TOOL_CHANGEPIN_DES=Thay đổi mã PIN hiện tại của Token.
+TOOL_CHANGEPIN_BTN=Thay đổi
+TOOL_RENEW_TITLE=Gia hạn Chứng thư số
+TOOL_RENEW_DES=Kiểm tra chứng thư số mới sau khi đăng ký gia hạn và cập nhật vào Token.
+TOOL_RENEW_BTN=Gia hạn
+TOOL_PROFILE_TITLE=Cập nhật thông tin thuê bao
+TOOL_PROFILE_DES=Thay đổi thông tin Email, số điện thoại của thuê bao trên hệ thống.
+TOOL_PROFILE_BTN=Cập nhật
+
+CONFIG_CHANGESKIN_TITLE=Thay đổi giao diện:
+CONFIG_CHANGELANGUAGE_TITLE=Ngôn ngữ hiển thị:
+
+SUPPORT_ABOUT_BTN=Giới thiệu
+SUPPORT_HELP_BTN=Hỗ trợ
+SUPPORT_CONTACT_TITLE=Liên hệ:
+SUPPORT_PHONE=Hỗ trợ kỹ thuật:
+SUPPORT_HELP_DOWNTHUE_TITLE=Tải công cụ kê khai thuế
+SUPPORT_HELP_DOWNTHUE_DES=Tải về công cụ hỗ trợ kê khai thuế qua mạng.
+SUPPORT_HELP_DOWNTHUE_BTN=Tải về
+SUPPORT_HELP_DOWNBHXH_TITLE=Tải phần mềm BHXH
+SUPPORT_HELP_DOWNBHXH_DES=Tải về phần mềm Bảo hiểm xã hội của VNPT.
+SUPPORT_HELP_DOWNBHXH_BTN=Tải về
+#---------------------------------------------------------------------
+NOTIFY_TOKEN_UNPLUGED=VNPT CA Token đã được rút ra
+NOTIFY_TOKEN_PLUGED=VNPT CA Token đã được cắm vào máy
+
+MESSAGE_UNSUPPORT_IN_CURRENT_VERSION=Phiên bản hiện tại chưa hỗ trợ
+MESSAGE_TOKEN_UNPLUGED=VNPT CA Token chưa được cắm vào máy
+MESSAGE_TOKEN_LOCKED=VNPT CA Token đã bị khóa.
+MESSAGE_UNDEFINED_ERROR=Lỗi không xác định
+
+CONTEXT_MENU_SHOW=Ẩn/Hiện
+CONTEXT_MENU_TOOLS=Công cụ
+CONTEXT_MENU_UPDATE=Kiểm tra bản mới
+CONTEXT_MENU_ABOUT=Giới thiệu
+CONTEXT_MENU_EXIT=Đóng
+
+CHANGEPIN_CURENT_PIN_TITLE=Mã PIN hiện tại:
+CHANGEPIN_NEW_PIN_TITLE=Mã PIN mới:
+CHANGEPIN_NEW_PIN_AGAIN_TITLE=Xác nhận mã PIN mới:
+CHANGEPIN_OK_BTN=Thay đổi
+CHANGEPIN_MESSAGE_SUCCESSFULL=Thay đổi User PIN thành công!
+CHANGEPIN_MESSAGE_ERROR=Lỗi khi thay đổi User PIN. 
+CHANGEPIN_CHECK_ENTER_CURENT_PIN=Nhập mã PIN hiện tại để tiếp tục
+CHANGEPIN_CHECK_PIN_INCORRECT=Mã PIN không chính xác
+CHANGEPIN_CHECK_PLUG_TOKEN=Cắm VNPT-CA Token để tiếp tục
+CHANGEPIN_CHECK_ENTER_NEW_PIN=Nhập mã PIN mới để tiếp tục
+CHANGEPIN_CHECK_MIN_PIN_LENGTH=Mã PIN có số ký tự tối thiểu là 
+CHANGEPIN_CHECK_ENTER_NEW_PIN_AGAIN=Nhập lại mã PIN mới để tiếp tục
+CHANGEPIN_CHECK_PIN_AGAIN_INVALID=Xác nhận mã PIN không khớp
+LINK_LABEL_ENTER_CODE=Nhập mã
+
+
+BTN_CLOSE=Đóng
+BTN_OK=Đồng ý
+
+DIALOG_CONFIRM_TITLE=Xác nhận
+
+DIALOG_OTP_CONFIRM_TITLE=Xác nhận mở khóa
+DIALOG_OTP_CONFIRM_LABEL=Nhập mã xác nhận đã được gửi qua Email/SMS để mở khóa Token
+DIALOG_OTP_CONFIRM_ERROR=Nhập mã xác nhận để tiếp tục
+
+DIALOG_SELECT_OTP_TITLE=Chọn hình thức nhận Mã xác nhận (OTP)
+
+DIALOG_PIN_CONFIRM_TITLE=Xác nhận mã PIN
+DIALOG_PIN_CONFIRM_LABEL=Nhập mã PIN để tiếp tục
+
+DIALOG_ERROR_TITLE=Cảnh báo
+DIALOG_MESSAGE_TITLE=Thông báo
+
+DIALOG_SERIAL_TITLE=Số serial
+DIALOG_SERIAL_LABEL=Số serial của chứng thư số trong token:
+DIALOG_SERIAL_LINK=Chép vào bộ nhớ tạm
+DIALOG_SERIAL_MESSAGE=Số serial của chứng thư đã được ghi vào bộ nhớ tạm
+
+DIALOG_UPDATE_PROFILE_TITLE=Cập nhật thông tin cá nhân
+DIALOG_UPDATE_PROFILE_PHONE=Điện thoại:
+DIALOG_UPDATE_PROFILE_PIN=Mã PIN token:
+DIALOG_UPDATE_PROFILE_OK_BTN=Cập nhật
+DIALOG_UPDATE_PROFILE_PROCESSING=Đang cập nhật thông tin cá nhân...
+DIALOG_UPDATE_PROFILE_SUCCESSFULL=Cập nhật thông tin khách hàng thành công
+DIALOG_UPDATE_PROFILE_ENTER_EMAIL=Nhập địa chỉ email hợp lệ để tiếp tục
+DIALOG_UPDATE_PROFILE_EMAIL_INVALID=Địa chỉ email không hợp lệ
+DIALOG_UPDATE_PROFILE_ENTER_PHONE=Nhập số điện thoại di động để tiếp tục
+DIALOG_UPDATE_PROFILE_PHONE_INVALID=Số điện thoại không hợp lệ
+DIALOG_UPDATE_PROFILE_ENTER_PIN=Nhập mã PIN của token để tiếp tục
+
+RENEW_CERT_QUERY_RENEW=Đang gửi yêu cầu gia hạn...
+RENEW_CERT_HAVE_NEW_CERT=Đã có chứng thư số mới trên hệ thống. Bạn có muốn cập nhật ngay?
+RENEW_CERT_UPDATING=Đang cập nhật chứng thư số...
+RENEW_CERT_SUCCESSFULL=Cập nhật chứng thư số thành công
+
+CERT_UTIL_OCSP_CHECKING=Đang kiểm tra trạng thái chứng thư số...
+CERT_UTIL_OCSP_NO_CA=Không lấy được thông tin chứng thư số của CA
+CERT_UTIL_OCSP_CERT_STATUS=Trạng thái chứng thư số của bạn
+
+PKCS11_UTIL_TOKEN_LOCKED=Token của bạn đã bị khóa, hãy gửi yêu cầu Unlock ở mục Công cụ
+PKCS11_UTIL_P12_DATA_INVALID=Không thể giải mã dữ liệu từ server. Liên hệ với quản trị để được hỗ trợ
+PKCS11_UTIL_CANNOT_IMPORT_PRIVATEKEY=Không thể cập nhật khóa bí mật của bạn
+PKCS11_UTIL_UNSUPPORT_KEY_TYPE=Không hỗ trợ định dạng khóa bí mật
+PKCS11_UTIL_CANNOT_UPDATE_CERT=Không thể cập nhật chứng thư số
+PKCS11_UTIL_CERT_KEY_NOT_MATCH=Chứng thư số không khớp với khóa bí mật
+PKCS11_UTIL_UNDEFINED_ERROR=Lỗi không xác định
+
+PIN_UNLOCKER_PROCESSING=Đang gửi yêu cầu mở khóa mã PIN...
+PIN_UNLOCKER_UNLOCKING=Đang kiểm tra mã xác nhận và mở khóa mã PIN...
+PIN_UNLOCKER_RESETED=Đã mở khóa mã PIN và chuyển về mặc định
+PIN_UNLOCKER_LET_CHANGE=Hãy chọn chức năng Thay đổi mã PIN để cập nhật lại.
+
+TMS_CANNOT_DECRYPT_DATA=Không thể giải mã dữ liệu TMS
+TMS_DATA_MALFORMED=Dữ liệu TMS không đúng định dạng
+
+# TMS_MESSAGE----------------------------------------------------------
+TMS_CUSTOMER_INFO_NULL=Không kiểm tra được thông tin token.
+TMS_CANNOT_CONNECT_TO_TMS=Không khởi tạo được kết nối tới máy chủ TMS.
+TMS_SERVER_NOT_RESPONSE=Hệ thống TMS không phản hồi, liên hệ với quản trị để được hỗ trợ.
+TMS_CANNOT_PARSE_TMS_RESPONSE=Không phân tích được dữ liệu TMS, vui lòng thử lại sau.
+TMS_CANNOT_CHECK_FOR_UPDATE=Không gửi được yêu cầu kiểm tra bản mới.
+# END_TMS_MESSAGE----------------------------------------------------------
+
+# UPDATE_MESSAGE----------------------------------------------------------
+UPDATE_CHECKING_NEW_VERSION=Đang kiểm tra bản mới...
+UPDATE_NO_NEW_VERSION=Hiện tại bạn đang sử dụng phiên bản mới nhất.
+UPDATE_HAVE_NEW_VERSION=VNPT CA Token Manager đã có phiên bản mới [VER]. Bạn có muốn cập nhật ngay?
+UPDATE_CANCEL_BUTTON=Hủy
+UPDATE_DOWNLOADING_UPDATE_PACKAGE=Đang tải xuống gói cập nhật...
+UPDATE_COMPLETE_UPDATE_PACKAGE=Gói cập nhật đã được tải xuống.
+UPDATE_TITLE=Cập nhật
+UPDATE_CANNOT_DOWNLOAD_PACKAGE=Tải gói cập nhật không hoàn thành. Vui lòng thử lại sau
+UPDATE_UPDATE_NOW_BTN=Cập nhật ngay
+# END_UPDATE_MESSAGE----------------------------------------------------------

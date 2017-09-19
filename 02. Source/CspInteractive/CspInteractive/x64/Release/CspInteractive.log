@@ -1,0 +1,11 @@
+﻿  Windowstore.cpp
+Windowstore.cpp(62): warning C4101: 'code': unreferenced local variable
+Windowstore.cpp(99): warning C4101: 'code': unreferenced local variable
+Windowstore.cpp(141): warning C4101: 'code': unreferenced local variable
+Windowstore.cpp(156): warning C4101: 'hProv': unreferenced local variable
+     Creating library S:\WORK\Projects\Token Manager\02. Sources\CspInteractive\x64\Release\CspInteractive.lib and object S:\WORK\Projects\Token Manager\02. Sources\CspInteractive\x64\Release\CspInteractive.exp
+  Generating code
+  All 168 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  CspInteractive.vcxproj -> S:\WORK\Projects\Token Manager\02. Sources\CspInteractive\x64\Release\CspInteractive.dll
+  CspInteractive.vcxproj -> S:\WORK\Projects\Token Manager\02. Sources\CspInteractive\x64\Release\CspInteractive.pdb (Full PDB)

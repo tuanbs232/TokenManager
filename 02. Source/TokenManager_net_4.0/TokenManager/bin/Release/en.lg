@@ -1,0 +1,152 @@
+MENU_CERTIFICATE=Certificates
+MENU_TOOL=Tools
+MENU_CONFIG=Configuration
+MENU_SUPPORT=Support
+
+TITLE_CERTIFICATE=CERTIFICATES
+TITLE_TOOL=TOOLS
+TITLE_CONFIG=CONFIGURATION
+
+TABLE_COLUMN_CN=Subject
+TABLE_COLUMN_VALID_FROM=Valid from
+TABLE_COLUMN_VALID_TO=Valid to
+
+TABLE_VIEW_CERT_TOOL_TRIP=View certificate
+TABLE_VIEW_SERIAL_TOOL_TRIP=View serial number
+TABLE_CHECK_OCSP_TOOL_TRIP=Check revocation info
+
+TOOL_UNLOCK_TITLE=Unlock Token
+TOOL_UNLOCK_DES=Init Token user PIN when locked
+TOOL_UNLOCK_BTN=Unlock
+TOOL_CHANGEPIN_TITLE=Change user PIN
+TOOL_CHANGEPIN_DES=Change current user PIN
+TOOL_CHANGEPIN_BTN=Change
+TOOL_RENEW_TITLE=Renew certificate
+TOOL_RENEW_DES=Check for new digital certificates after renewal and update to Token.
+TOOL_RENEW_BTN=Renew
+TOOL_PROFILE_TITLE=Update subscriber information
+TOOL_PROFILE_DES=Change the email, phone numbers of subscribers on the system.
+TOOL_PROFILE_BTN=Update
+
+CONFIG_CHANGESKIN_TITLE=Change skin:
+CONFIG_CHANGELANGUAGE_TITLE=Display language:
+
+SUPPORT_ABOUT_BTN=About
+SUPPORT_HELP_BTN=Support
+SUPPORT_CONTACT_TITLE=Contact:
+SUPPORT_PHONE=Technical support:
+SUPPORT_HELP_DOWNTHUE_TITLE=Download the tax declaration tool
+SUPPORT_HELP_DOWNTHUE_DES=Download the online tax return support tool.
+SUPPORT_HELP_DOWNTHUE_BTN=Download
+SUPPORT_HELP_DOWNBHXH_TITLE=Download Social Security Software
+SUPPORT_HELP_DOWNBHXH_DES=Download the VNPT Social Security software.
+SUPPORT_HELP_DOWNBHXH_BTN=Download
+#---------------------------------------------------------------------
+NOTIFY_TOKEN_UNPLUGED=VNPT CA Token has been removed
+NOTIFY_TOKEN_PLUGED=VNPT CA Token is plugged into your computer
+
+MESSAGE_UNSUPPORT_IN_CURRENT_VERSION=Not yet supported in current version
+MESSAGE_TOKEN_UNPLUGED=VNPT CA Token is not plugged in
+MESSAGE_TOKEN_LOCKED=VNPT CA Token is locked.
+MESSAGE_UNDEFINED_ERROR=Undefined error
+
+CONTEXT_MENU_SHOW=Show/Hide
+CONTEXT_MENU_TOOLS=Tools
+CONTEXT_MENU_UPDATE=Check for update
+CONTEXT_MENU_ABOUT=About
+CONTEXT_MENU_EXIT=Exit
+
+CHANGEPIN_CURENT_PIN_TITLE=Current PIN:
+CHANGEPIN_NEW_PIN_TITLE=New PIN:
+CHANGEPIN_NEW_PIN_AGAIN_TITLE=Confirm new PIN:
+CHANGEPIN_OK_BTN=Change
+CHANGEPIN_MESSAGE_SUCCESSFULL=Change User PIN successfully!
+CHANGEPIN_MESSAGE_ERROR=Error changing User PIN.
+CHANGEPIN_CHECK_ENTER_CURENT_PIN=Enter your current PIN to continue
+CHANGEPIN_CHECK_PIN_INCORRECT=Incorrect PIN
+CHANGEPIN_CHECK_PLUG_TOKEN=Plug in VNPT-CA Token to continue
+CHANGEPIN_CHECK_ENTER_NEW_PIN=Enter a new PIN to continue
+CHANGEPIN_CHECK_MIN_PIN_LENGTH=The minimum number of characters is
+CHANGEPIN_CHECK_ENTER_NEW_PIN_AGAIN=Enter new PIN again to continue
+CHANGEPIN_CHECK_PIN_AGAIN_INVALID=Confirm PIN mismatch
+LINK_LABEL_ENTER_CODE=Enter code
+
+
+BTN_CLOSE=Close
+BTN_OK=OK
+
+DIALOG_CONFIRM_TITLE=Confirm
+
+DIALOG_OTP_CONFIRM_TITLE=Confirm unlock PIN
+DIALOG_OTP_CONFIRM_LABEL=Enter the confirmation code sent via Email / SMS to unlock Token
+DIALOG_OTP_CONFIRM_ERROR=Enter the confirmation code to continue
+
+DIALOG_SELECT_OTP_TITLE=Select Receive Code (OTP)
+
+DIALOG_PIN_CONFIRM_TITLE=Confirm user PIN
+DIALOG_PIN_CONFIRM_LABEL=Enter user PIN to continue
+
+DIALOG_ERROR_TITLE=Warning
+DIALOG_MESSAGE_TITLE=Message
+
+DIALOG_SERIAL_TITLE=Serial number
+DIALOG_SERIAL_LABEL=Your certificate's serial number is:
+DIALOG_SERIAL_LINK=Copy to clipboard
+DIALOG_SERIAL_MESSAGE=Your serial number already copy to clipboard.
+
+DIALOG_UPDATE_PROFILE_TITLE=Update personal information
+DIALOG_UPDATE_PROFILE_PHONE=Phone number:
+DIALOG_UPDATE_PROFILE_PIN=User PIN:
+DIALOG_UPDATE_PROFILE_OK_BTN=Update
+DIALOG_UPDATE_PROFILE_PROCESSING=Updating personal information...
+DIALOG_UPDATE_PROFILE_SUCCESSFULL=Update subscription information successfully
+DIALOG_UPDATE_PROFILE_ENTER_EMAIL=Enter a valid email address to continue
+DIALOG_UPDATE_PROFILE_EMAIL_INVALID=Email address is not valid
+DIALOG_UPDATE_PROFILE_ENTER_PHONE=Enter your mobile number to continue
+DIALOG_UPDATE_PROFILE_PHONE_INVALID=Invalid phone number
+DIALOG_UPDATE_PROFILE_ENTER_PIN=Enter the PIN of the token to continue
+
+RENEW_CERT_QUERY_RENEW=Sending renewal request...
+RENEW_CERT_HAVE_NEW_CERT=There is a new certificate on the system. Do you want to update now?
+RENEW_CERT_UPDATING=Updating digital certificate ...
+RENEW_CERT_SUCCESSFULL=Successful update of the certificate
+
+CERT_UTIL_OCSP_CHECKING=Checking status of digital certificate...
+CERT_UTIL_OCSP_NO_CA=No CA certificate found
+CERT_UTIL_OCSP_CERT_STATUS=Your certificate's revocation information is
+
+PKCS11_UTIL_TOKEN_LOCKED=Your Token is locked, send Unlock request in Tools
+PKCS11_UTIL_P12_DATA_INVALID=Can not decrypt data from server. Contact the administrator for assistance
+PKCS11_UTIL_CANNOT_IMPORT_PRIVATEKEY=Failed to update your private key
+PKCS11_UTIL_UNSUPPORT_KEY_TYPE=The Private Key format is not supported
+PKCS11_UTIL_CANNOT_UPDATE_CERT=Failed to update user certificate
+PKCS11_UTIL_CERT_KEY_NOT_MATCH=User certificate and private key mismatch
+PKCS11_UTIL_UNDEFINED_ERROR=Undefied Eror
+
+PIN_UNLOCKER_PROCESSING=Sending pin unlock request...
+PIN_UNLOCKER_UNLOCKING=Checking OTP code and unlock PIN ...
+PIN_UNLOCKER_RESETED=PIN unlocked and moved back to default
+PIN_UNLOCKER_LET_CHANGE=Please select the Reset PIN function in return.
+
+TMS_CANNOT_DECRYPT_DATA=Unable to decode data from TMS
+TMS_DATA_MALFORMED=TMS data is malformed
+
+# TMS_MESSAGE----------------------------------------------------------
+TMS_CUSTOMER_INFO_NULL=Error retrieving the token information
+TMS_CANNOT_CONNECT_TO_TMS=Unable connect to TMS server
+TMS_SERVER_NOT_RESPONSE=The TMS system does not respond, so contact the administrator for assistance
+TMS_CANNOT_PARSE_TMS_RESPONSE=Unable parse TMS data
+TMS_CANNOT_CHECK_FOR_UPDATE=Can not submit a new test request
+# END_TMS_MESSAGE----------------------------------------------------------
+
+# UPDATE_MESSAGE----------------------------------------------------------
+UPDATE_CHECKING_NEW_VERSION=Getting update information. Please wait...
+UPDATE_NO_NEW_VERSION=Congratulations! You already have the latest version.
+UPDATE_HAVE_NEW_VERSION=VNPT CA Token Manager has a new version [VER]. Do you want to update now?
+UPDATE_CANCEL_BUTTON=Cancel
+UPDATE_DOWNLOADING_UPDATE_PACKAGE=Downloading update package. Please wait...
+UPDATE_COMPLETE_UPDATE_PACKAGE=The update package has been downloaded.
+UPDATE_TITLE=Update
+UPDATE_CANNOT_DOWNLOAD_PACKAGE=Cannot download update package
+UPDATE_UPDATE_NOW_BTN=Cập nhật ngay
+# END_UPDATE_MESSAGE----------------------------------------------------------
