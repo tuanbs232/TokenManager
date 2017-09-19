@@ -334,3 +334,9 @@ AssocingFileExtension=Associating %1 with the %2 file extension...
 AutoStartProgramGroupDescription=Startup:
 AutoStartProgram=Automatically start %1
 AddonHostProgramNotFound=%1 could not be located in the folder you selected.%n%nDo you want to continue anyway?
+
+; TuanBS custom messages
+RemoveSetting=Do you want to Remove settings?
+DisallowDomain=This program cannot be installed on domain controllers.
+RequireMinVersion=VNPT CA Token Manager required Windows XP sp3 or higher version.
+InstallingDotNet=Installing .NET Framework 4.0. This might take a few minutes...
