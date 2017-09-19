@@ -1,7 +1,7 @@
 #include <idp.iss>
 
 #define MyAppName "VNPT-CA Token Manager"
-#define MyAppVersion "1.0.1"
+#define MyAppVersion "1.0.2"
 #define MyAppPublisher "VNPT Software"
 #define MyAppURL "http://www.vnptsoftware.vn/"
 #define MyAppExeName "TokenManager.exe"
@@ -53,8 +53,8 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: 
 Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: quicklaunchicon
 
 [Languages]                          
-Name: "vi"; MessagesFile: "compiler:Vietnamese.isl"; LicenseFile: "{#ReleaseDir}\res\License-vi.rtf"
-Name: "en"; MessagesFile: "compiler:Default.isl"; LicenseFile: "{#ReleaseDir}\res\License-en.rtf"
+Name: "vi"; MessagesFile: "{#ReleaseDir}\Vietnamese.isl"; LicenseFile: "{#ReleaseDir}\res\License-vi.rtf"
+Name: "en"; MessagesFile: "{#ReleaseDir}\Default.isl"; LicenseFile: "{#ReleaseDir}\res\License-en.rtf"
 
 
 [Registry]
