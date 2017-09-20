@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,31 @@ namespace TokenManager.dialog
             title.Text = lang.GetValue(LanguageUtil.Key.SUPPORT_ABOUT_BTN);
             contactTile.Text = lang.GetValue(LanguageUtil.Key.SUPPORT_CONTACT_TITLE);
             phoneTitle.Text = lang.GetValue(LanguageUtil.Key.SUPPORT_PHONE);
+
+            label1.Text = "VNPT CA Token Manager " + GetAppVersion() + "(c) 2017 VNPT Software";
+        }
+
+        public static string GetAppVersion()
+        {
+            String appVersion = "";
+            RegistryKey key = null;
+            try
+            {
+                key = Registry.LocalMachine.OpenSubKey(TokenManagerConstants.REG_APP_SUBKEY);
+            }
+            catch (Exception ex)
+            {
+                _LOG.Error("_getAppVersion: " + ex.Message);
+            }
+            try
+            {
+                appVersion = "" + key.GetValue(TokenManagerConstants.REG_VERSION);
+            }
+            catch (Exception ex)
+            {
+                _LOG.Error("_getAppVersion: " + ex.Message);
+            }
+            return appVersion;
         }
         
         private void bunifuImageButton1_Click(object sender, EventArgs e)

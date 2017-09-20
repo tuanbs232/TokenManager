@@ -575,6 +575,7 @@ namespace TokenManager
             }
             else if (btnSource == helpBtn)
             {
+                aboutAppName.Text = "VNPT CA Token Manager " + AboutDialog.GetAppVersion() + "(c) 2017 VNPT Software";
                 tabControl.SelectedIndex = _HELP_TAB;
             }
         }
